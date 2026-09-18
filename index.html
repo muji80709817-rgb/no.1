@@ -5,13 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>정보보안 지원자 포트폴리오 | 나를 소개하는 한 페이지</title>
   
-  <!-- 앤티크 분위기를 살려줄 구글 명조체 폰트 로드 -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@700;800&family=Song+Myung&family=Noto+Sans+KR:wght@400;700&display=swap" rel="stylesheet">
 
   <style>
-    /* 앤티크 빨간머리 앤 다락방 컨셉 색상 변수 */
     :root {
       --font-title: 'Nanum Myeongjo', 'Song Myung', serif;
       --font-body: 'Noto Sans KR', sans-serif;
@@ -19,7 +17,6 @@
       --paper-card-bg: #FDF9F0;
       --paper-card-sub: #F3EBDD;
       --text-dark: #2B1A10;
-      --text-muted: #5C4334;
       --border-gold: #A67C52;
       --border-dark-gold: #6E4D2C;
       --accent-red: #8B261D;
@@ -32,7 +29,6 @@
       padding: 0;
     }
 
-    /* 앤티크 우드 배경화면 이미지 적용 */
     body {
       background: linear-gradient(var(--bg-wood-overlay), var(--bg-wood-overlay)),
                   url('https://images.unsplash.com/photo-1546484475-7f7bd55792da?auto=format&fit=crop&w=1920&q=80') center/cover fixed no-repeat #2B1A10;
@@ -43,7 +39,6 @@
       min-height: 100vh;
     }
 
-    /* 전체 프레임 컨테이너 */
     .portfolio-wrapper {
       max-width: 960px;
       margin: 0 auto;
@@ -54,7 +49,6 @@
       padding: 35px 40px;
     }
 
-    /* 상단 헤더 */
     header {
       text-align: center;
       border-bottom: 2px dashed var(--border-gold);
@@ -79,7 +73,6 @@
       font-weight: 700;
     }
 
-    /* 카드 1: 대상 및 목적 박스 */
     .target-purpose {
       background-color: var(--paper-card-sub);
       border: 1px solid var(--border-gold);
@@ -96,7 +89,6 @@
       font-size: 1.1rem;
     }
 
-    /* 카드 1: 공개 / 비공개 범위 그리드 */
     .scope-grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -137,7 +129,6 @@
       color: var(--text-dark);
     }
 
-    /* 카드 2 & 카드 5: 핵심 강점 아코디언 세션 */
     .strength-section h2 {
       font-family: var(--font-title);
       font-size: 1.6rem;
@@ -160,7 +151,6 @@
       box-shadow: 0 2px 5px rgba(0,0,0,0.05);
     }
 
-    /* 카테고리 버튼 - 명확하고 눈에 띄게 강조 */
     .accordion-btn {
       width: 100%;
       text-align: left;
@@ -194,7 +184,6 @@
       font-weight: bold;
     }
 
-    /* 부드러운 슬라이드 애니메이션 효과 */
     .accordion-content {
       max-height: 0;
       overflow: hidden;
@@ -232,7 +221,6 @@
       font-weight: bold;
     }
 
-    /* 움직임 줄이기 옵션 (접근성 준수) */
     @media (prefers-reduced-motion: reduce) {
       .accordion-content {
         transition: none !important;
@@ -249,19 +237,17 @@
     </header>
 
     <main>
-      <!-- 카드 1: 대상 및 목적 -->
       <section class="target-purpose">
         <p><strong>[대상 및 목적]</strong> 정보보안 직무 채용 담당자에게 저의 핵심 강점, 협업 태도, 그리고 관찰 가능한 근거를 명확히 보여주기 위한 페이지입니다.</p>
       </section>
 
-      <!-- 카드 1: 공개/비공개 범위 -->
       <section class="scope-grid">
         <article class="scope-box">
           <h3>공개할 정보 (3가지 이상)</h3>
           <ul>
-            <li>지원자 이름 및 보안 지원 직무</li>
-            <li>강점/취향별 상황·행동·결과 사례</li>
-            <li>캡스톤 프로젝트 비식별화 산출물 요약</li>
+            <li>1. 이름 : 유지은</li>
+            <li>2. 직무 : 정보보안</li>
+            <li>3. 프로젝트 경험 : 현재 진행중</li>
           </ul>
         </article>
         <article class="scope-box">
@@ -274,11 +260,9 @@
         </article>
       </section>
 
-      <!-- 카드 2 & 카드 5: 강점/취향 슬라이드 아코디언 -->
       <section class="strength-section">
         <h2>핵심 강점 및 협업 역량 (카테고리 클릭/엔터)</h2>
 
-        <!-- 항목 1 -->
         <article class="accordion-item">
           <button class="accordion-btn" aria-expanded="false" aria-controls="content-1" id="btn-1">
             <span>1. [조율] 캡스톤 프로젝트 의견 대립 조율 및 타협점 도출</span>
@@ -292,7 +276,6 @@
           </div>
         </article>
 
-        <!-- 항목 2 -->
         <article class="accordion-item">
           <button class="accordion-btn" aria-expanded="false" aria-controls="content-2" id="btn-2">
             <span>2. [배려] 팀 분위기 개선 및 세심한 간식 케어로 동기부여</span>
@@ -306,17 +289,16 @@
           </div>
         </article>
 
-        <!-- 항목 3 -->
         <article class="accordion-item">
           <button class="accordion-btn" aria-expanded="false" aria-controls="content-3" id="btn-3">
-            <span>3. [신뢰] 보안 기본 원칙 준수 및 개인정보 비식별화 철저</span>
+            <span>3. [열정/노력] 정보보안 전문성 확보를 위한 지속적인 학업 및 자격증 취득 도전</span>
             <span class="icon" aria-hidden="true">+</span>
           </button>
           <div id="content-3" class="accordion-content" role="region" aria-labelledby="btn-3">
-            <p><strong>상황:</strong> 공개 포트폴리오 작성 시 민감한 내부 데이터와 기술 설정이 외부에 노출될 위험이 있던 상황입니다.</p>
-            <p><strong>행동:</strong> 프로젝트 산출물 검토 시 모든 개인정보 및 내부 시스템 토큰값을 사전 제거·마스킹 처리하였습니다.</p>
-            <p><strong>결과:</strong> 기밀성을 유지하면서도 채용 담당자에게 검증 가능한 결과물만을 안전하게 공개하는 체계를 갖췄습니다.</p>
-            <div class="evidence-tag">📌 공개 근거: 비식별화 점검 완료 체크리스트</div>
+            <p><strong>상황:</strong> 정보보안 분야 진출이라는 확실한 목표를 가지고 전공 역량을 한층 더 끌어올려야 했던 상황입니다.</p>
+            <p><strong>행동:</strong> 2023년 정보보안학과로 편입/진학하여 현재 4학년에 재학하며, 전공 지식 심화와 함께 실무 역량 입증을 위한 관련 자격증 3개를 동시에 준비하고 있습니다.</p>
+            <p><strong>결과:</strong> 보안 체계와 이론을 탄탄히 다짐과 동시에, 꼭 정보보안 직무로 취업하겠다는 강한 집념과 꾸준한 실행력을 증명하고 있습니다.</p>
+            <div class="evidence-tag">📌 공개 근거: 정보보안학과 재학 증명 및 자격증 수험표/계획서</div>
           </div>
         </article>
 
@@ -325,7 +307,6 @@
   </div>
 
   <script>
-    // 카테고리 슬라이드 아코디언 인터랙션 (마우스 & 키보드 반응형)
     const accordionButtons = document.querySelectorAll('.accordion-btn');
 
     accordionButtons.forEach(button => {
@@ -333,7 +314,6 @@
         const content = document.getElementById(button.getAttribute('aria-controls'));
         const isExpanded = button.getAttribute('aria-expanded') === 'true';
 
-        // 상태 전환
         button.setAttribute('aria-expanded', !isExpanded);
         button.querySelector('.icon').textContent = isExpanded ? '+' : '-';
         
